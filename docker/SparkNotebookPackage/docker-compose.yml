@@ -1,0 +1,18 @@
+version: '3.7'
+
+name: sparknotebookpackage
+
+services:
+  spark-w-package:
+    image: jupyter/pyspark-notebook
+    container_name: spark-w-package
+    volumes:
+      -  "../../jupyter:/home/jovyan/jupyter"
+      -  "../../package:/home/jovyan/package"
+      -  ../../test_package:/home/jovyan/test_package
+      -  ../../data:/home/jovyan/data
+      -  ../../setup.py:/home/jovyan/setup.py
+      -  ../../README.md:/home/jovyan/README.md
+    ports:
+      -  8888:8888
+    command: ["sh", "-c", "pip3 install -e . && start.sh jupyter notebook --NotebookApp.token=''"]

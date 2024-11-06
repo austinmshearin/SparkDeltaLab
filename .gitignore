@@ -1,0 +1,16 @@
+# Python Virtual Environment Directory
+*_VirEnv/
+
+# Compiled Python Files
+*.pyc
+
+# Temporary Office files when file is open
+*~$*
+
+# Visual Studio Code Preference Files
+*.code-workspace
+*.vscode
+
+# Local Data Files
+data/**
+!.gitkeep
