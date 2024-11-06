@@ -7,9 +7,9 @@ services:
     image: jupyter/pyspark-notebook
     container_name: spark-w-package
     volumes:
-      -  "../../jupyter:/home/jovyan/jupyter"
-      -  "../../package:/home/jovyan/package"
-      -  ../../test_package:/home/jovyan/test_package
+      -  ../../jupyter:/home/jovyan/jupyter
+      -  ../../delta_analytics:/home/jovyan/delta_analytics
+      -  ../../test_delta_analytics:/home/jovyan/test_delta_analytics
       -  ../../data:/home/jovyan/data
       -  ../../setup.py:/home/jovyan/setup.py
       -  ../../README.md:/home/jovyan/README.md

@@ -4,18 +4,19 @@ with open('README.md', 'r', encoding='utf-8') as read_me_file:
     long_description = read_me_file.read()
 
 setuptools.setup(
-    name='package',
+    name='delta_analytics',
     version='0.0.1',
-    author='Author',
-    author_email='author@gmail.com',
-    description='Python Project Boiler Plate',
+    author='Austin Shearin',
+    author_email='austinmshearin@gmail.com',
+    description='Delta Table Analytics',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/author/project.git',
+    url='https://github.com/austinmshearin/SparkDeltaLab',
     license='MIT',
     packages=[
-        'package',
+        'delta_analytics',
         ],
     install_requires=[
+        'pyspark'
         ],
 )
