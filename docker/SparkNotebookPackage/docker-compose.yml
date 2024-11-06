@@ -4,7 +4,7 @@ name: sparknotebookpackage
 
 services:
   spark-w-package:
-    image: jupyter/pyspark-notebook
+    image: jupyter/pyspark-notebook:spark-3.5.0
     container_name: spark-w-package
     volumes:
       -  ../../jupyter:/home/jovyan/jupyter
