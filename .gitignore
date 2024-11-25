@@ -10,10 +10,6 @@
 # Temporary Office files when file is open
 *~$*
 
-# Visual Studio Code Preference Files
-*.code-workspace
-*.vscode
-
 # Local Data Files
 data/**
 !.gitkeep

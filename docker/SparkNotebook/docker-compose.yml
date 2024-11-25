@@ -1,0 +1,13 @@
+version: '3.7'
+
+name: spark-notebook
+
+services:
+  spark-notebook:
+    build: .
+    container_name: spark-notebook
+    volumes:
+      -  "../../jupyter:/home/jovyan/jupyter"
+      -  ../../data:/home/jovyan/data
+    ports:
+      -  8888:8888

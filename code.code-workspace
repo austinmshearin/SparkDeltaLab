@@ -1,0 +1,108 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"autopep"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Clear Jupyter Output",
+				"type": "shell",
+				"windows": {
+					"command": "python ./utility_scripts/clear_jupyter_output.py"
+				}
+			},
+			{
+				"label": "Command Prompt Vir Env",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/command_prompt_vir_env.bat"
+				}
+			},
+			{
+				"label": "Docker Clear",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/docker_clear.bat"
+				}
+			},
+			{
+				"label": "Jupyter Initialization",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_jupyter_initialization.bat"
+				}
+			},
+			{
+				"label": "Python Package Build",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_package_build.bat"
+				}
+			},
+			{
+				"label": "Python Package Editable Install",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_package_editable_install.bat"
+				}
+			},
+			{
+				"label": "Python Packages Delete",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_packages_delete.bat"
+				}
+			},
+			{
+				"label": "Python Packages Export",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_packages_export.bat"
+				}
+			},
+			{
+				"label": "Python Packages Load Exact",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_packages_load_exact.bat"
+				}
+			},
+			{
+				"label": "Python Packages Load Quick Reqs",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_packages_load_quick_reqs.bat"
+				}
+			},
+			{
+				"label": "Python Packages Load",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_packages_load.bat"
+				}
+			},
+			{
+				"label": "Python Pytest",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_pytest.bat"
+				}
+			},
+			{
+				"label": "Python Vir Env Initialization",
+				"type": "shell",
+				"windows": {
+					"command": "./utility_scripts/python_virtual_environment_initialization.bat"
+				}
+			},
+		]
+	}
+}
