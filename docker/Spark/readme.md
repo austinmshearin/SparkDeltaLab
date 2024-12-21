@@ -3,6 +3,9 @@
     - Java is required on the local machine as PySpark utilizes Java to open the connection to the Spark cluster
     - Java 17 is required as Spark is only compatible with Java 8, 11, and 17 (https://community.cloudera.com/t5/Community-Articles/Spark-and-Java-versions-Supportability-Matrix/ta-p/383669)
     - Verify you are able to run `java -version` in your terminal which should return version 17
+    - For Windows:
+        - The JAVA_HOME environment variable must point to the root directory of JAVA, not the bin: C:\Program Files\Java\jdk-17
+        - The entry into PATH must point to the java bin: %JAVA_HOME%\bin
 - Must use Python 3.11.9 locally
     - The bitnami/spark:3.5.1 image uses this version of Python and the versions must match between the cluster and the client
     - At a minimum, the minor version must match or the connection will error out
