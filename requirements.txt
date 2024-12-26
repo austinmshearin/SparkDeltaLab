@@ -1,5 +1,5 @@
 autopep8
-delta-spark
+deltalake
 jupyterlab
 notebook
 pandas
